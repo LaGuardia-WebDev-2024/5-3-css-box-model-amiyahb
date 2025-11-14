@@ -6,18 +6,57 @@
         <style>
             body {
                 font-family: cursive;
+                animation: customAni 5s ease 0s infinite normal none;
+                text-align: center;
             }
             .photo-gallery {
                 background: rgb(255, 254, 217);
+                padding: 10px;
+              
+                
             }
             .photo {
                 width: 200px;
+                border: 5px ridge pink;
+                margin: 10px;
+                
             }
+            @keyframes customAni {
+  0%,
+  50%,
+  100% {
+	opacity: 1;
+  }
+
+  25%,
+  75% {
+	opacity: 0.3;
+  }
+      
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
         </style>
     </head>
     <body>
 
-        <h1>Boxers are beautiful?</h1>
+        <h1 class="glow">Boxers are beautiful?</h1>
         
         <div class="photo-gallery">
         
